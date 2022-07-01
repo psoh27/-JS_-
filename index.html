@@ -8,7 +8,7 @@
     <title>오늘 뭐해 ?</title>
   </head>
   <body>
-    <form id="login" class="hidden">
+    <form class="hidden" id="login">
       <input
         required
         maxlength="15"
@@ -17,7 +17,15 @@
       />
       <button>입력</button>
     </form>
-    <h1 id="welcome" class="hidden"></h1>
-    <script src="app.js"></script>
+    <h1 class="hidden" id="welcome"></h1>
+    <h2 id="clock"></h2>
+    <div id="quotes">
+      <span></span>
+      <span></span>
+    </div>
+    <script src="js/login.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
   </body>
 </html>
