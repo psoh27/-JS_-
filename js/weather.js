@@ -8,7 +8,9 @@ function onSuccess(position) {
     .then((response) => response.json())
     .then((data) => {
       const weather = document.querySelector("#weather span");
-      weather.innerText = `현재 ${data.name}의 날씨는 ${data.weather[0].main}, 온도는 ${data.main.temp}℃입니다.`;
+      weather.innerText = `
+      ${data.weather[0].main}
+      ${Math.round(data.main.temp)}℃`;
     });
 }
 function onError() {
