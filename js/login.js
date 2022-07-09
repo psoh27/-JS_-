@@ -11,6 +11,7 @@ function FormSubmit(event) {
 }
 
 function welcoming(username) {
+  loginForm.classList.add("hidden");
   welcome.innerText = `안녕하세요, ${username}님!`;
   welcome.classList.remove("hidden");
 }

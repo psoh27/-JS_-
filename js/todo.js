@@ -15,6 +15,7 @@ function removeTodo(event) {
 function showTodo(newList) {
   const li = document.createElement("li");
   li.classList.add("list-group-item");
+  li.classList.add("animate__bounceIn");
   li.id = newList.id;
   const span = document.createElement("span");
   span.innerText = newList.text;
