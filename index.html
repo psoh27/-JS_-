@@ -14,13 +14,17 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
   <!-- 원활한 배치를 위해 제일 위에 둠 -->
   <h2 id="clock" class="text-center position-absolute top-0 start-50 translate-middle-x display-1"></h2>
   <body class="img js-fullheight">
 <!-- 페이지의 핵심이 되는 부분을 main으로 묶기 -->
-    <main id="main" class="position-absolute top-50 start-50 translate-middle">
+    <main id="main" class="text-center position-absolute top-50 start-50 translate-middle">
 
     <form class="text-center" id="login">
       <input 
@@ -29,14 +33,15 @@
         maxlength="15"
         type="text"
         placeholder="이름이 무엇인가요?"
+        
       />
       <button class="fa-solid fa-check"></button>
     </form>
     <h1 class="text-center" id="welcome"></h1>
-    <form id="todo" class="text-center">
+    <form id="todo" class="text-center h-100 ">
       <input id="plan" type="text" placeholder="오늘의 계획은 무엇인가요?" required />
     </form>
-    <ul id="todo-list" class="text-center fs-4"></ul>
+    <ul id="todo-list" class=" text-center fs-4"></ul>
   </main>
 
   <!-- 명언과 사람 이름을 담아낸 footer 추가 -->
