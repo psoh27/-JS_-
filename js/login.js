@@ -1,6 +1,7 @@
 const loginForm = document.querySelector("#login");
 const loginInput = document.querySelector("#login input");
 const welcome = document.querySelector("#welcome");
+const plan = document.querySelector("#todo");
 
 function FormSubmit(event) {
   event.preventDefault();
@@ -12,13 +13,15 @@ function FormSubmit(event) {
 
 function welcoming(username) {
   loginForm.classList.add("hidden");
-  welcome.innerText = `안녕하세요, ${username}님!`;
+  welcome.innerText = `Good Day, ${username}!`;
   welcome.classList.remove("hidden");
+  plan.classList.remove("hidden");
 }
 
 const SavedName = localStorage.getItem("username");
 
 if (SavedName === null) {
+  plan.classList.add("hidden");
   loginForm.classList.remove("hidden");
   loginForm.addEventListener("submit", FormSubmit);
 } else {
