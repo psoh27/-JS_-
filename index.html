@@ -21,27 +21,27 @@
   />
   </head>
   <!-- 원활한 배치를 위해 제일 위에 둠 -->
-  <h2 id="clock" class="text-center position-absolute top-0 start-50 translate-middle-x display-1"></h2>
-  <body class="img js-fullheight">
+  <h2 id="clock" class="text-center position-absolute top-0 start-50 translate-middle-x"></h2>
+  <body>
+    <div id="img_container"></div>
 <!-- 페이지의 핵심이 되는 부분을 main으로 묶기 -->
     <main id="main" class="text-center position-absolute top-50 start-50 translate-middle">
-
-    <form class="text-center" id="login">
+    <form class="text-center position-absolute top-50 start-50 translate-middle" id="login">
       <input 
       id="name"
         required
         maxlength="15"
         type="text"
-        placeholder="이름이 무엇인가요?"
-        
+        placeholder="What is your name?"
+        class=""
       />
       <button class="fa-solid fa-check"></button>
     </form>
-    <h1 class="text-center" id="welcome"></h1>
+    <h1 class="text-center" id="welcome"></h1> 
     <form id="todo" class="text-center h-100 ">
-      <input id="plan" type="text" placeholder="오늘의 계획은 무엇인가요?" required />
+      <input id="plan" type="text" placeholder="What is your main focus for today?" required />
     </form>
-    <ul id="todo-list" class=" text-center fs-4"></ul>
+    <ul id="todo-list" class=" text-center fs-6"></ul>
   </main>
 
   <!-- 명언과 사람 이름을 담아낸 footer 추가 -->
@@ -50,10 +50,10 @@
       <span class="text-end"></span>
     </div>
       <figure id="quote" class="text-center position-absolute bottom-0 start-50 translate-middle-x">
-      <blockquote class="blockquote fs-4 fw-bold">
+      <blockquote class="blockquote fs-5">
         <p></p>
       </blockquote>
-      <figcaption id="author" class="blockquote-footer fs-6 fw-bold">
+      <figcaption id="author" class="blockquote-footer fs-6">
       </figcaption>
     </footer>
     
