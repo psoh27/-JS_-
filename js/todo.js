@@ -22,6 +22,9 @@ function showTodo(newList) {
   const btn = document.createElement("button");
   btn.innerText = "❌";
   btn.addEventListener("click", removeTodo);
+  if (todoList.childElementCount > 9) {
+    return;
+  }
   li.appendChild(span);
   li.appendChild(btn);
   todoList.appendChild(li);

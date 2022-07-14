@@ -2,6 +2,7 @@ const loginForm = document.querySelector("#login");
 const loginInput = document.querySelector("#login input");
 const welcome = document.querySelector("#welcome");
 const plan = document.querySelector("#todo");
+const main = document.querySelector("#main");
 
 function FormSubmit(event) {
   event.preventDefault();
