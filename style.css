@@ -4,59 +4,59 @@
     font-weight: normal;
     font-style: normal;
 }
-
-#main,#quote,#weather,#clock{
-    padding-bottom: 5rem;
-    z-index: 1;
-    opacity: 1;
+#clock{
+    font-size: 10rem;
+    letter-spacing: -0.5rem;
+    color:white;
+    font-family: 'Roboto', sans-serif;
 }
 #main{
     width: 300%;
 }
-#container{
-    height: 100vh;
+body{
     width: 100vw;
-}
-.bg-img{
-    background-size: 100% 100%;
+    height: 100vh;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1;
-    opacity: 0.6;
 }
-@media (max-width:850px){}
-
 .hidden{
     display: none;
 }
 #login{
-    padding-top: 17rem;
+    margin-top: 10rem;
 }
-#name{
-    margin-top:5rem;
+#welcome{
+    margin-top: 10rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
 }
 #name ,#plan{
     background: transparent;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
+    color: white;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
 }
+#todo h2{
+color: white;
+margin-top: 5rem;
+}
 #plan{
-    margin-top: 10rem;
     width: 10%;
 }
 input::placeholder{
-    color:black;
+    color:white;
     text-align: center;
-    opacity: 0.6;
     font-family: 'Roboto', sans-serif;
 }
 ul{
     list-style: none;
     text-align: center;
-    color: black;
+    color: white;
     font-family: 'Roboto', sans-serif;
     
 }
@@ -64,34 +64,25 @@ ul{
 button{
     border: 1px solid transparent;
     background: transparent;
-    color: black;
+    color: white;
 }
-#clock{
-    font-size: 10rem;
-    letter-spacing: -0.5rem;
-    padding-top: 30rem;
-    color:white;
-    font-family: 'Roboto', sans-serif;
 
-}
-#welcome{
-    padding-top: 35rem;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-size: 4rem;
-}
+
 #weather{
     color:white;
     text-shadow: 1px 1px 0px gray;
     font-size: x-large;
     font-family: 'Roboto', sans-serif;
+    margin-right: 3rem;
 }
 #quote{
-    color: black;
-    font-family: 'Roboto', sans-serif;
-}
-#author{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     color: white;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
-
+#author{
+    color:white;
+}
