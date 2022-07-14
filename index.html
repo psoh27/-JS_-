@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>오늘 뭐해 ?</title>
+    <!-- 다양한 개발툴 추가(폰트 포함) -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,27 +19,27 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+    <title>오늘 뭐해 ?</title>
+    
   </head>
-  <!-- 원활한 배치를 위해 제일 위에 둠 -->
-  <h2 id="clock" class="text-center position-absolute top-0 start-50 translate-middle-x"></h2>
   <body>
-    <div id="img_container"></div>
 <!-- 페이지의 핵심이 되는 부분을 main으로 묶기 -->
     <main id="main" class="text-center position-absolute top-50 start-50 translate-middle">
-    <form class="text-center position-absolute top-50 start-50 translate-middle" id="login">
+      <h2 id="clock" class="text-center position-absolute top-0 start-50 translate-middle-x"></h2>
+    <form  id="login" class="text-center position-absolute top-50 start-50 translate-middle">
       <input 
       id="name"
         required
         maxlength="15"
         type="text"
         placeholder="What is your name?"
-        class=""
       />
       <button class="fa-solid fa-check"></button>
     </form>
     <h1 class="text-center" id="welcome"></h1> 
     <form id="todo" class="text-center h-100 ">
-      <input id="plan" type="text" placeholder="What is your main focus for today?" required />
+      <h2>What is your main focus for today?</h2>
+      <input id="plan" type="text" placeholder="Write Here." required />
     </form>
     <ul id="todo-list" class=" text-center fs-6"></ul>
   </main>
@@ -49,12 +49,14 @@
     <div id="weather" class="position-absolute top-0 end-0 d-flex flex-row">
       <span class="text-end"></span>
     </div>
-      <figure id="quote" class="text-center position-absolute bottom-0 start-50 translate-middle-x">
+    <div id="quote">
+      <figure>
       <blockquote class="blockquote fs-5">
         <p></p>
       </blockquote>
       <figcaption id="author" class="blockquote-footer fs-6">
       </figcaption>
+    </div>
     </footer>
     
     <script src="js/login.js"></script>
