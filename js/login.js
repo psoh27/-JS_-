@@ -1,8 +1,7 @@
 const loginForm = document.querySelector("#login");
-const loginInput = document.querySelector("#login input");
+const loginInput = document.querySelector("#name");
 const welcome = document.querySelector("#welcome");
-const plan = document.querySelector("#todo");
-const main = document.querySelector("#main");
+const plan = document.querySelector("#plan_input");
 
 function FormSubmit(event) {
   event.preventDefault();

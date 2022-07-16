@@ -14,7 +14,7 @@ function removeTodo(event) {
 }
 function showTodo(newList) {
   const li = document.createElement("li");
-  li.classList.add("list-group-item");
+  // li.classList.add("list-group-item");
   li.classList.add("animate__bounceIn");
   li.id = newList.id;
   const span = document.createElement("span");
@@ -22,7 +22,7 @@ function showTodo(newList) {
   const btn = document.createElement("button");
   btn.innerText = "❌";
   btn.addEventListener("click", removeTodo);
-  if (todoList.childElementCount > 9) {
+  if (todoList.childElementCount > 7) {
     return;
   }
   li.appendChild(span);
