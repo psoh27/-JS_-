@@ -24,24 +24,26 @@
   </head>
   <body>
 <!-- 페이지의 핵심이 되는 부분을 main으로 묶기 -->
-    <main id="main" class="text-center position-absolute top-50 start-50 translate-middle">
-      <h2 id="clock" class="text-center position-absolute top-0 start-50 translate-middle-x"></h2>
-    <form  id="login" class="text-center position-absolute top-50 start-50 translate-middle">
-      <input 
-      id="name"
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
+    <main id="main">
+      <div class="animate__fadeIn">
+      <h1 id="clock" class="text-center"></h1>
+    </div>
+      <form  id="login" class="text-center h-100">
+      <div id="name_input" class="animate__fadeIn position-absolute top-50 start-50 translate-middle">
+      <h2 id="naem_title">What is your name?</h2>
+      <input id="name" type="text" maxlengh="13" placeholder="Write Here." required />
       <button class="fa-solid fa-check"></button>
+      </div>
     </form>
-    <h1 class="text-center" id="welcome"></h1> 
-    <form id="todo" class="text-center h-100 ">
-      <h2>What is your main focus for today?</h2>
+    <h1 class="text-center" id="welcome"></h1>
+    <form id="todo" class="text-center h-100">
+      <div id="plan_input">
+      <h2 id="plan_title">What is your main focus for today?</h2>
       <input id="plan" type="text" placeholder="Write Here." required />
-    </form>
-    <ul id="todo-list" class=" text-center fs-6"></ul>
+      <button class="fa-solid fa-check"></button>
+    <ul id="todo-list" class="text-center fs-6"></ul>
+  </div>
+  </form>
   </main>
 
   <!-- 명언과 사람 이름을 담아낸 footer 추가 -->
