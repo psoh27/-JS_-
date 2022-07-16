@@ -5,13 +5,20 @@
     font-style: normal;
 }
 #clock{
+    margin-top: 7rem;
     font-size: 10rem;
     letter-spacing: -0.5rem;
     color:white;
     font-family: 'Roboto', sans-serif;
 }
-#main{
-    width: 300%;
+.hidden{
+    display: none;
+}
+#todo{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 body{
     width: 100vw;
@@ -20,14 +27,14 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
-.hidden{
-    display: none;
-}
-#login{
-    margin-top: 10rem;
+/* #name_input{
+    margin-top: 3rem;
+} */
+#login h2{
+    color:white;
+    font-family: 'Roboto', sans-serif;
 }
 #welcome{
-    margin-top: 10rem;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 4rem;
@@ -45,9 +52,9 @@ body{
 color: white;
 margin-top: 5rem;
 }
-#plan{
-    width: 10%;
-}
+/* #plan_input{
+    margin-top: 2rem;
+} */
 input::placeholder{
     color:white;
     text-align: center;
@@ -58,15 +65,16 @@ ul{
     text-align: center;
     color: white;
     font-family: 'Roboto', sans-serif;
-    
 }
-
+li{
+    display: flex;
+    justify-content: space-around;
+}
 button{
     border: 1px solid transparent;
     background: transparent;
     color: white;
 }
-
 
 #weather{
     color:white;
@@ -84,5 +92,32 @@ button{
     text-align: center;
 }
 #author{
+font-size: 2rem;
     color:white;
+}
+@media (min-width:500px) and (max-width:590px){
+    #clock{
+        font-size: 8.9em;
+    }
+}
+@media (max-width:500px){
+    #welcome{
+        font-size: 3em;
+    }
+    #clock{
+        font-size: 7rem;
+    }
+    #quote, #author{
+        font-size: 2rem;
+    }
+}
+@media (max-height:800px){
+    #quote,#author{
+        display: none;
+    }
+}
+@media (max-width:380px){
+    #welcome{
+        font-size: 2.5rem;
+    }
 }
