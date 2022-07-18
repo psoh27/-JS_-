@@ -121,3 +121,8 @@ font-size: 2rem;
         font-size: 2.5rem;
     }
 }
+@media (max-width:440px){
+    #name_input{
+        width: 70%;
+    }
+}
